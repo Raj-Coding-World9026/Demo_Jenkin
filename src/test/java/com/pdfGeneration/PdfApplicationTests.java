@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @SpringBootTest
-
+@Transactional
 class PdfApplicationTests {
 @Autowired
 private EmployeeService es;
@@ -25,10 +25,10 @@ Employee emp= new Employee();
 	@Test
 	public void createStu(){
 		emp.setId(100L);
-		emp.setName("raaaaam");
+		emp.setName("mmmmmmmmmm");
 		emp.setSalary(91230900);
 		emp.setDepartment("s323d");
-		Employee save = er.save(emp);
+		Employee save = es.createPost(emp);
 		System.out.println("........./////////......."+save.getId()+" "+save.getName());
 	}
 	@Test
