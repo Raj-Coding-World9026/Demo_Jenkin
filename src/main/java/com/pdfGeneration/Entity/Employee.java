@@ -4,6 +4,7 @@ package com.pdfGeneration.Entity;
 import jakarta.persistence.*;
 
 @Entity
+
 public class Employee {
 
     @Id
