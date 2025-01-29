@@ -32,7 +32,10 @@ Employee emp= new Employee();
 	@Test
 	public void list(){
 		List<Employee> all = er.findAll();
-		System.out.println(all);
+		for(Employee e:all){
+			System.out.println(e.getId()+" "+e.getName()+" "+e.getSalary()+" "+e.getDepartment());
+		}
+
 	}
 	@Test
 	public  void jenkin(){
