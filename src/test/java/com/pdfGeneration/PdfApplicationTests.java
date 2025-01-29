@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @SpringBootTest
-@Transactional
+
 class PdfApplicationTests {
 @Autowired
 private EmployeeService es;
