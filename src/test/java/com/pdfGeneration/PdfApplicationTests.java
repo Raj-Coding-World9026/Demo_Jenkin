@@ -10,7 +10,7 @@ class PdfApplicationTests {
 	void contextLoads() {
 	}
 	@Test
-	public static void jenkin(){
+	public  void jenkin(){
 		System.out.println("From jenkin");
 	}
 }
