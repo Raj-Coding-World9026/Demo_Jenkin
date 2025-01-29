@@ -169,4 +169,7 @@ public class EmployeeService {
         Employee save = employeeRepository.save(e);
         return save;
     }
+    public void serviceTest(String s){
+        System.out.println(s);
+    }
 }
