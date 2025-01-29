@@ -6,10 +6,12 @@ import com.pdfGeneration.Service.EmployeeService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @SpringBootTest
+@Transactional
 class PdfApplicationTests {
 @Autowired
 private EmployeeService es;
@@ -22,12 +24,12 @@ Employee emp= new Employee();
 	}
 	@Test
 	public void createStu(){
-		emp.setId(1L);
-		emp.setName("ram");
-		emp.setSalary(90900);
-		emp.setDepartment("sd");
+		emp.setId(100L);
+		emp.setName("raaaaam");
+		emp.setSalary(91230900);
+		emp.setDepartment("s323d");
 		Employee save = er.save(emp);
-		System.out.println("........./////////......."+save);
+		System.out.println("........./////////......."+save.getId()+" "+save.getName());
 	}
 	@Test
 	public void list(){
