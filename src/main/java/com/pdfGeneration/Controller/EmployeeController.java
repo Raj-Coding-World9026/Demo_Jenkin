@@ -2,6 +2,7 @@ package com.pdfGeneration.Controller;
 
 import com.pdfGeneration.Entity.Employee;
 import com.pdfGeneration.Service.EmployeeService;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -25,6 +26,7 @@ public ResponseEntity<Employee> createPost(@RequestBody Employee emp){
 }
 
 @GetMapping
+@Test
 public String demoJenkin(){
     System.out.println("demo jenkin");
     return "works";
