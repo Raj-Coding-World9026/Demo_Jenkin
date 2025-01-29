@@ -9,5 +9,8 @@ class PdfApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
+	@Test
+	public static void jenkin(){
+		System.out.println("From jenkin");
+	}
 }
